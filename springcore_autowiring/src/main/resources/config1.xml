@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans.xsd
+ http://www.springframework.org/schema/context
+ http://www.springframework.org/schema/context/spring-context.xsd">
+
+<!-- 	<bean class="com.assignment.placestovisit" name="ptv" p:id="1" p:month="May" p:season="Summer" />
+	 -->
+	 
+	 <context:annotation-config/>
+	 
+	<bean class="com.assignment.placestovisit" name="ptv">
+	<property name="id" value="1" />
+	<property name="month" value="May" />
+	<property name="season" value="Summer" />
+	</bean>
+	
+	<bean class="com.assignment.Locations" name="l" p:l1="Kodai Lake" p:l2="Silver Cascade Waterfalls" p:l3="Pillar Rocks"/>
+	
+
+</beans>
